@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap");
+.contact {
+  margin: 2rem 0;
+}
+.contact a {
+  display: block;
+  font-weight: 700;
+  font-size: 1rem;
+  padding-top: 0.75rem;
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+h1 span:not([class]) {
+  color: #7a8bac;
+}
+
+[data-splitting] .word {
+  overflow: hidden;
+}
+[data-splitting] .word .char {
+  transform: translateY(100%);
+  animation: slide-up 0.5s cubic-bezier(0.77, 0, 0.18, 1) forwards;
+  animation-delay: calc(var(--char-index) * 15ms);
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(150%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.description {
+  padding-top: 0.75rem;
+}
+
+a {
+  color: black;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.light {
+  color: #d2d2d2;
+}
+
+.mini-subtitle {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #d2d2d2;
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-weight: 800;
+    font-size: 4rem;
+  }
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.mainmenu-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li {
+  display: inline-block;
+  font-weight: 700;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.navigation ul li a {
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  padding-left: 0.5rem;
+}
+.navigation .logo ul {
+  padding-inline-start: 0;
+}
+.navigation ul li {
+  font-weight: bold;
+}
+.navigation a.active {
+  border-bottom: 2px solid black;
+}
+
+.container {
+  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: 1100px;
+  display: grid;
+}
+
+.wrapper {
+  position: relative;
+  height: 1000px;
+}
+
+.circles {
+  position: absolute;
+  z-index: -100;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 100;
+  margin: 0 auto;
+}
+
+.emoji:hover {
+  perspective: 1000px;
+  cursor: default;
+  animation: wave 1.25s 1 0s alternate;
+  transform-origin: center bottom;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(deg);
+  }
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(deg);
+  }
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+.werkje {
+  height: 20rem;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  margin: 1.5rem 0;
+  border-radius: 2%;
+}
+
+.steekwoord {
+  margin: 2rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+  .intro {
+    max-width: 75%;
+  }
+
+  .description {
+    max-width: 300px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
+  margin-bottom: 3rem;
+  grid-row-gap: 5rem;
+}
+
+.me-img {
+  border-radius: 5%;
+}
+
+.grid-1 {
+  max-width: 100%;
+}
+
+.main-menu {
+  padding-top: 2rem;
+}
+
+.wrapper-home {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .grid-1 {
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    grid-gap: 4rem;
+  }
+
+  .wrapper-home {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+
+/*# sourceMappingURL=/main.48b3db1d.css.map */

@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles/dist/footer.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"footer.4304b0cd.css","sourceRoot":"..","sourcesContent":[".contact {\n  margin: 2rem 0;\n}\n.contact a {\n  display: block;\n  font-weight: 700;\n  font-size: 1rem;\n  padding-top: 0.75rem;\n  text-decoration: none;\n  color: black;\n}"]}

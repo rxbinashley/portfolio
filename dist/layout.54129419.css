@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
+  margin-bottom: 3rem;
+  grid-row-gap: 5rem;
+}
+
+.me-img {
+  border-radius: 5%;
+}
+
+.grid-1 {
+  max-width: 100%;
+}
+
+.main-menu {
+  padding-top: 2rem;
+}
+
+.wrapper-home {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .grid-1 {
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    grid-gap: 4rem;
+  }
+
+  .wrapper-home {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+
+/*# sourceMappingURL=/layout.54129419.css.map */
