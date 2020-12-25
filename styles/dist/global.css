@@ -1,10 +1,77 @@
-body {
-  font-family: "Helvetica Neue", sans-serif;
-}
-
 .container {
   padding: 0 1rem;
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1100px;
   display: grid;
+}
+
+span {
+  color: #7A8BAC;
+}
+
+.wrapper {
+  position: relative;
+  height: 1000px;
+}
+
+.circles {
+  position: absolute;
+  z-index: -100;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 100;
+  margin: 0 auto;
+}
+
+.emoji:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  cursor: default;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+.werkje {
+  height: 20rem;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  margin: 1.5rem 0;
+  border-radius: 2%;
+}
+
+.steekwoord {
+  margin: 2rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+  .intro {
+    max-width: 75%;
+  }
+
+  .description {
+    max-width: 300px;
+  }
 }

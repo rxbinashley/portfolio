@@ -3,6 +3,9 @@
 <head>
     <link rel="stylesheet" href="styles/dist/global.css">
     <link rel="stylesheet" href="styles/dist/main-menu.css">
+    <link rel="stylesheet" href="styles/dist/typography.css">
+    <link rel="stylesheet" href="styles/dist/layout.css">
+    <link rel="stylesheet" href="styles/dist/footer.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robin Kuipers | Portfolio</title>
@@ -10,35 +13,51 @@
 <body>
     <div class="container">
         <header class="main-menu">
-            <div class="container"
+            <div class="container">
             <div class="mainmenu-nav">
               <div class="logo">
                 <ul>
-                  <li>👋</li>
+                  <li class="emoji">👋</li>
                   <li>Robin Kuipers</li>
                 </ul>
               </div>
-            </div>
               <nav class="navigation">
-                  <ul>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Contact</a></li>
-                  </ul>
-              </nav>
-            </div>
-            </div>
+                <ul>
+                  <li><a href="page/work.html">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+         </header>      
+      </div>
         
           </header>
           <main>
-            <label class="label">
-              <div class="toggle">
-                <input class="toggle-state" type="checkbox" name="check" value="check" />
-                <div class="indicator"></div>
+            <div class="wrapper-home">
+              <div class="container content">
+                <h1 class="intro">Hey, I’m <span>Robin</span>.<br> I create (digital) products with great <span>user experience</span>.</h1>
               </div>
-              <div class="label-text">no more emails plz</div>
-            </label>
-            
+            </div>
+            <div class="container content">
+              <h3 class="intro">Some of my work</h3>
+              <p class="mini-subtitle">Work in progress</p>
+            </div>
+          </div>
+
+          <div class="container work">
+              <div class="werkje"></div>
+              <div class="werkje"></div>
+          </div>
           </main>
+          <footer>
+            <div class="container wrapper-home">
+              <h3>Interested in working with me?</h3>
+              <div class="contact">
+                <a href="#">Linkedin</a>
+                <a href="#">E-mail</a>
+                <a href="#">Resumé</a>
+              </div>
+            </div>
+          </footer>
     </div>
 </body>
 </html>
