@@ -121,6 +121,16 @@ ul li {
   display: grid;
 }
 
+.hide {
+  visibility: hidden;
+  display: none;
+}
+
+.show {
+  visibility: visible;
+  display: inline;
+}
+
 .wrapper {
   position: relative;
   height: 1000px;
@@ -212,6 +222,16 @@ img {
 
   .description {
     max-width: 300px;
+  }
+
+  .hide {
+    visibility: visible;
+    display: inline;
+  }
+
+  .show {
+    visibility: hidden;
+    display: none;
   }
 }
 * {
