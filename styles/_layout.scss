@@ -11,6 +11,14 @@
   grid-row-gap: 5rem;
 }
 
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 70%;
+  grid-gap: 4rem;
+  margin-bottom: 3rem;
+  grid-row-gap: 5rem;
+}
+
 .me-img {
   border-radius: 5%;
 }
@@ -26,6 +34,12 @@
 .wrapper-home {
   padding-top: 10rem;
   padding-bottom: 10rem;
+}
+
+.illustratie img {
+  max-width: 100%;
+  border: 1rem solid white;
+  box-shadow: 0px 4px 16px rgba(17, 17, 26, 0.05), 0px 8px 32px #11111a0d;
 }
 
 @media screen and (min-width: 1000px) {

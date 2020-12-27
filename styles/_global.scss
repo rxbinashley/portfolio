@@ -5,6 +5,10 @@
   display: grid;
 }
 
+.test {
+  max-width: 100%;
+}
+
 .hide {
   visibility: hidden;
   display: none;
@@ -19,12 +23,7 @@
   position: relative;
   height: 1000px;
 }
-.circles {
-  position: absolute;
-  z-index: -100;
-  top: 0;
-  left: 0;
-}
+
 .content {
   position: relative;
   z-index: 100;
@@ -32,9 +31,6 @@
 }
 
 .emoji:hover {
-  // animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-  // transform: translate3d(0, 0, 0);
-  // backface-visibility: hidden;
   perspective: 1000px;
   cursor: default;
   animation: wave 1.25s 1 0s alternate;
@@ -104,8 +100,9 @@
     0px 8px 32px rgba(17, 17, 26, 0.05);
 }
 
-.steekwoord {
+.portfolio-wrapper {
   margin: 2rem 0;
+  padding-top: 3rem;
 }
 img {
   width: 100%;
@@ -116,7 +113,7 @@ img {
     max-width: 75%;
   }
   .description {
-    max-width: 300px;
+    max-width: 35rem;
   }
   .hide {
     visibility: visible;
