@@ -298,7 +298,7 @@ img {
 
   .grid-project {
     display: grid;
-    grid-template-columns: 1fr 60%;
+    grid-template-columns: 1fr 70%;
     grid-gap: 4rem;
     margin-bottom: 3rem;
     grid-row-gap: 5rem;
