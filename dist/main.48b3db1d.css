@@ -11,75 +11,6 @@
   color: black;
 }
 
-body {
-  font-family: "Inter", sans-serif;
-}
-
-h1 {
-  font-weight: 800;
-  font-size: 2.5rem;
-}
-h1 span:not([class]) {
-  color: #7a8bac;
-}
-
-[data-splitting] .word {
-  overflow: hidden;
-}
-[data-splitting] .word .char {
-  transform: translateY(100%);
-  animation: slide-up 0.5s cubic-bezier(0.77, 0, 0.18, 1) forwards;
-  animation-delay: calc(var(--char-index) * 15ms);
-}
-
-@keyframes slide-up {
-  from {
-    transform: translateY(150%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 1.25rem;
-}
-
-p {
-  line-height: 1.5;
-}
-
-.description {
-  padding-top: 0.75rem;
-}
-
-a {
-  color: black;
-  font-weight: bolder;
-  text-decoration: none;
-}
-
-.light {
-  color: #d2d2d2;
-}
-
-.mini-subtitle {
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #d2d2d2;
-  margin: 1rem 0;
-}
-
-@media screen and (min-width: 1000px) {
-  h1 {
-    font-weight: 800;
-    font-size: 4rem;
-  }
-}
 body,
 html {
   margin: 0;
@@ -307,6 +238,85 @@ img {
   .body-text {
     max-width: 35rem;
     padding-top: 0;
+  }
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+h1 span:not([class]) {
+  color: #7a8bac;
+}
+
+.splitting .whitespace {
+  line-height: 0;
+  height: 1%;
+}
+.splitting .word {
+  overflow: hidden;
+  display: inline-block;
+}
+.splitting .word .char {
+  display: inline-block;
+  opacity: 0;
+  transform: translate3d(0, 150%, 0);
+  animation: slide-up 0.5s cubic-bezier(0.77, 0, 0.18, 1) 0s forwards;
+  animation-delay: calc(var(--char-index) * 50ms);
+}
+
+@keyframes slide-up {
+  from {
+    transform: translate3d(0, 100%, 0);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.description {
+  padding-top: 0.75rem;
+}
+
+a {
+  color: black;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.light {
+  color: #d2d2d2;
+}
+
+.mini-subtitle {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #d2d2d2;
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-weight: 800;
+    font-size: 4rem;
   }
 }
 

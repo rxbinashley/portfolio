@@ -1,5 +1,5 @@
 import "splitting/dist/splitting.css";
-import "splitting/dist/splitting-cells.css";
+// import "splitting/dist/splitting-cells.css";
 import Splitting from "splitting";
 
 Splitting({
@@ -8,5 +8,5 @@ Splitting({
   /* by: String of the plugin name */
   by: "chars",
   /* key: Optional String to prefix the CSS variables */
-  key: null
+  key: null,
 });

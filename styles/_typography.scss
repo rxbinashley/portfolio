@@ -7,30 +7,40 @@ body {
 h1 {
   font-weight: 800;
   font-size: 2.5rem;
+  line-height: 1.2;
   span:not([class]) {
     color: #7a8bac;
   }
 }
 
-[data-splitting] {
+.splitting {
+  .whitespace {
+    line-height: 0;
+    height: 1%;
+  }
   .word {
     overflow: hidden;
+    display: inline-block;
 
     .char {
-      transform: translateY(100%);
-      animation: slide-up 0.5s cubic-bezier(0.77, 0, 0.18, 1) forwards;
-      animation-delay: calc(var(--char-index) * 15ms);
+      display: inline-block;
+      opacity: 0;
+      transform: translate3d(0, 150%, 0);
+      animation: slide-up 0.5s cubic-bezier(0.77, 0, 0.18, 1) 0s forwards;
+      animation-delay: calc(var(--char-index) * 50ms);
     }
   }
 }
 
 @keyframes slide-up {
   from {
-    transform: translateY(150%);
+    transform: translate3d(0, 100%, 0);
+    opacity: 0;
   }
 
   to {
-    transform: translateY(0);
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
 

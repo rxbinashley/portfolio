@@ -190,12 +190,6 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/splitting/dist/splitting-cells.css":[function(require,module,exports) {
-
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
 },{"_css_loader":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/splitting/dist/splitting.js":[function(require,module,exports) {
 var define;
 var global = arguments[3];
@@ -701,12 +695,11 @@ return Splitting;
 
 require("splitting/dist/splitting.css");
 
-require("splitting/dist/splitting-cells.css");
-
 var _splitting2 = _interopRequireDefault(require("splitting"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// import "splitting/dist/splitting-cells.css";
 (0, _splitting2.default)({
   /* target: String selector, Element, Array of Elements, or NodeList */
   target: "[data-splitting]",
@@ -717,7 +710,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   /* key: Optional String to prefix the CSS variables */
   key: null
 });
-},{"splitting/dist/splitting.css":"node_modules/splitting/dist/splitting.css","splitting/dist/splitting-cells.css":"node_modules/splitting/dist/splitting-cells.css","splitting":"node_modules/splitting/dist/splitting.js"}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"splitting/dist/splitting.css":"node_modules/splitting/dist/splitting.css","splitting":"node_modules/splitting/dist/splitting.js"}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -743,9 +736,9 @@ var checkedAssets, assetsToAccept;
 var parent = module.bundle.parent;
 
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
-  var hostname = "0.0.0.0" || location.hostname;
+  var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57392" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50384" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
