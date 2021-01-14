@@ -189,6 +189,10 @@ img {
   margin-top: 2rem;
 }
 
+.work {
+  gap: 2rem;
+}
+
 .body-text {
   padding-top: 0.75rem;
 }
